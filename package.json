@@ -1,6 +1,7 @@
 {
   "name": "wctc-medals-frontend",
   "version": "0.1.0",
+  "homepage": "https://jeffdziad.github.io/wctc-medals-frontend",
   "private": true,
   "dependencies": {
     "@microsoft/signalr": "^8.0.0",
