@@ -124,6 +124,7 @@ function App() {
                 })
                 .catch(e => createNotification("Database", "Failed to connect to the Olympic Medals Database!"));
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [connection]);
 
     const handleLogin = async (username, password) => {

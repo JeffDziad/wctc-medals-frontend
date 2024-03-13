@@ -6,7 +6,7 @@ import axios from "axios";
 
 export default function Country(props) {
     const {country, medals, onDelete, canDelete, canPatch, onIncrement, onDecrement, onSave, onReset} = props;
-    const {name, id} = props.country;
+    const {name} = props.country;
     const [countryApiData, setCountryApiData] = useState({});
 
     useEffect(() => {
@@ -20,7 +20,7 @@ export default function Country(props) {
             }
         }
         grabCountryData();
-    }, [setCountryApiData]);
+    }, [setCountryApiData, name]);
 
     const getMedalsTotal = (country, medals) => {
         let sum = 0;
